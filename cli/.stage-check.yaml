@@ -1,0 +1,17 @@
+global:
+  allow:
+dev:
+  deny:
+    - int
+    - prod
+  allow:
+int:
+  deny:
+    - dev
+    - prod
+  allow:
+prod:
+  deny:
+    - dev
+    - int
+  allow:
