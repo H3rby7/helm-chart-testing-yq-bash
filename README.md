@@ -1,6 +1,7 @@
 # Helm Chart Testing
 
 Enhances https://github.com/helm/chart-testing with jq, yq and bash
+Also adds a ["Stage Check"](./README.md#stage-check) utility
 
 # Found on
 
@@ -47,3 +48,8 @@ dev:
 1. replace occurrences defined by a stage using `sed`
 1. replace occurrences defined by `global` using `sed`
 1. run `grep` for strings defined in `stage-name.deny` using `grep -n denied-word`
+
+# TODOs / Next Steps
+
+- [ ] Ignore Lines starting with '#' (comments)
+- [ ] Find a better way than replacing allowed values with SED
